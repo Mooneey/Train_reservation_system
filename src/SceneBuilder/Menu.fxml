@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="bgColor" prefHeight="441.0" prefWidth="784.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Menu_controller">
+   <children>
+      <ImageView fitHeight="441.0" fitWidth="807.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@train_mid.png" />
+         </image>
+      </ImageView>
+      <Button id="btn3" layoutX="400.0" layoutY="143.0" mnemonicParsing="false" onAction="#go_guide" prefHeight="79.0" prefWidth="126.0" style="-fx-background-color: transparent;" styleClass="menuBtn" stylesheets="@application.css" text="예매 방법" textFill="WHITE">
+         <font>
+            <Font name="HYkanM" size="22.0" />
+         </font></Button>
+      <Button layoutX="562.0" layoutY="21.0" mnemonicParsing="false" onAction="#Information" prefHeight="23.0" prefWidth="87.0" style="-fx-background-color: transparent;" text="나의 정보">
+         <font>
+            <Font name="HYkanM" size="15.0" />
+         </font></Button>
+      <Button layoutX="671.0" layoutY="21.0" mnemonicParsing="false" onAction="#LogoutBtn" prefHeight="23.0" prefWidth="87.0" style="-fx-background-color: transparent;" text="로그아웃">
+         <font>
+            <Font name="HYkanM" size="15.0" />
+         </font></Button>
+      <Button layoutX="60.0" layoutY="138.0" mnemonicParsing="false" onAction="#Reservebtn" prefHeight="93.0" prefWidth="114.0" style="-fx-background-color: transparent;" text="표 예매" textFill="WHITE">
+         <font>
+            <Font name="HYkanM" size="22.0" />
+         </font></Button>
+      <Label fx:id="laName2" layoutX="23.0" layoutY="9.0" prefHeight="23.0" prefWidth="278.0">
+         <font>
+            <Font name="HYkanM" size="15.0" />
+         </font></Label>
+      <Button id="btn2" fx:id="conBtn" layoutX="227.0" layoutY="150.0" mnemonicParsing="false" onAction="#Confirmbtn" prefHeight="65.0" prefWidth="126.0" style="-fx-background-color: transparent;" styleClass="menuBtn" stylesheets="@application.css" text="예약 확인" textFill="WHITE">
+         <font>
+            <Font name="HYkanM" size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="117.0" layoutY="263.0" prefHeight="62.0" prefWidth="515.0" text="Train Ticket Booking" textFill="#FEE2CB">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

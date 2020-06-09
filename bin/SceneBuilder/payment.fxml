@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Pay_controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffb199" height="73.0" layoutX="1.0" layoutY="1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="112.0" layoutY="111.0" text="총 결제 금액">
+         <font>
+            <Font name="HYkanM" size="15.0" />
+         </font></Label>
+      <Label fx:id="Price" layoutX="298.0" layoutY="98.0" prefHeight="41.0" prefWidth="68.0" text="00000">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ComboBox fx:id="card_combo" layoutX="244.0" layoutY="157.0" prefWidth="150.0" />
+      <Label layoutX="121.0" layoutY="161.0" prefHeight="15.0" prefWidth="68.0" text="카드 선택">
+         <font>
+            <Font name="HYkanM" size="15.0" />
+         </font></Label>
+      <Label layoutX="122.0" layoutY="211.0" text="카드 번호">
+         <font>
+            <Font name="HYkanM" size="15.0" />
+         </font></Label>
+      <TextField layoutX="240.0" layoutY="207.0" prefHeight="23.0" prefWidth="52.0" />
+      <TextField layoutX="303.0" layoutY="207.0" prefHeight="23.0" prefWidth="52.0" />
+      <TextField layoutX="363.0" layoutY="207.0" prefHeight="23.0" prefWidth="52.0" />
+      <PasswordField layoutX="424.0" layoutY="207.0" prefHeight="23.0" prefWidth="68.0" />
+      <ComboBox fx:id="Month" layoutX="238.0" layoutY="260.0" prefHeight="23.0" prefWidth="81.0" />
+      <ComboBox fx:id="Year" layoutX="401.0" layoutY="260.0" prefHeight="23.0" prefWidth="81.0" />
+      <Label layoutX="79.0" layoutY="263.0" text="유효기간 월(MONTH)">
+         <font>
+            <Font name="HYkanM" size="15.0" />
+         </font></Label>
+      <Label layoutX="336.0" layoutY="264.0" text="년(YEAR)">
+         <font>
+            <Font name="HYkanM" size="15.0" />
+         </font></Label>
+      <Label layoutX="93.0" layoutY="315.0" text="비밀번호 앞 2자리">
+         <font>
+            <Font name="HYkanM" size="15.0" />
+         </font></Label>
+      <PasswordField layoutX="241.0" layoutY="311.0" prefHeight="23.0" prefWidth="60.0" />
+      <Button layoutX="242.0" layoutY="354.0" mnemonicParsing="false" onAction="#pay" prefHeight="32.0" prefWidth="117.0" style="-fx-background-color: #ffb199;" text="결제하기">
+         <font>
+            <Font name="HYkanM" size="17.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffb199" height="32.0" layoutX="23.0" layoutY="21.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="37.0" />
+      <Button layoutX="20.0" layoutY="16.0" mnemonicParsing="false" onAction="#backToManu" prefHeight="42.0" prefWidth="43.0" style="-fx-background-color: transparent;" text="&lt;" textFill="WHITE">
+         <font>
+            <Font name="HYkanM" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="233.0" layoutY="16.0" text="결   제" textFill="WHITE">
+         <font>
+            <Font name="HYkanM" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

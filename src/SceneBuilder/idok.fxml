@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="134.0" prefWidth="247.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DataController">
+  <children>
+    <Label layoutX="38.0" layoutY="45.0" text="사용 가능한 ID 입니다!">
+      <font>
+        <Font name="HYkanM" size="17.0" />
+      </font>
+    </Label>
+    <Button fx:id="ok" layoutX="94.0" layoutY="85.0" mnemonicParsing="false" onAction="#NoAction" prefHeight="31.0" prefWidth="60.0" style="-fx-background-color: #ffb199;" text="확인">
+      <font>
+        <Font name="HYkanM" size="17.0" />
+      </font>
+    </Button>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="19.0" layoutY="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="247.0">
+      <fill>
+        <Color blue="0.600" green="0.694" red="1.000" fx:id="x1" />
+      </fill>
+    </Rectangle>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="19.0" layoutY="136.0" stroke="TRANSPARENT" strokeType="INSIDE" width="247.0" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="134.0" prefWidth="247.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DataController">
+  <children>
+    <Label layoutX="26.0" layoutY="43.0" text="ID 중복검사가 필요합니다">
+      <font>
+        <Font name="HYkanM" size="17.0" />
+      </font>
+    </Label>
+    <Button fx:id="ok" layoutX="90.0" layoutY="85.0" mnemonicParsing="false" onAction="#NoAction" prefHeight="31.0" prefWidth="67.0" style="-fx-background-color: #ffb199;" text="확인">
+      <font>
+        <Font name="HYkanM" size="17.0" />
+      </font>
+    </Button>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffb199" height="19.0" layoutY="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="247.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="19.0" layoutY="136.0" stroke="TRANSPARENT" strokeType="INSIDE" width="247.0" />
+  </children>
+</AnchorPane>

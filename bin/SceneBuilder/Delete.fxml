@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="179.0" prefWidth="240.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+  <children>
+    <Label layoutX="59.0" layoutY="45.0" text="비밀번호를 입력해주세요.">
+      <font>
+        <Font name="HYkanM" size="16.0" />
+      </font>
+    </Label>
+    <Button fx:id="suout" layoutX="115.0" layoutY="117.0" mnemonicParsing="false" onAction="#Delete" prefHeight="34.0" prefWidth="72.0" style="-fx-background-color: #ffb199;" text="확인">
+      <font>
+        <Font name="HYkanM" size="18.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="23.0" layoutY="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="302.0">
+      <fill>
+        <Color blue="0.600" green="0.694" red="1.000" fx:id="x2" />
+      </fill>
+    </Rectangle>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="23.0" layoutY="165.0" stroke="TRANSPARENT" strokeType="INSIDE" width="302.0" />
+    <PasswordField fx:id="password" layoutX="83.0" layoutY="83.0" />
+  </children>
+</AnchorPane>

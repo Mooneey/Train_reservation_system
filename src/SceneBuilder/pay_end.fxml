@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="209.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Pay_controller">
+   <children>
+      <Label layoutX="61.0" layoutY="64.0" text="결제를 진행하시겠습니까?">
+         <font>
+            <Font name="HYkanM" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="71.0" layoutY="138.0" mnemonicParsing="false" onAction="#pay_yes" prefHeight="29.0" prefWidth="70.0" style="-fx-background-color: #ffb199;" text="예">
+         <font>
+            <Font name="HYkanM" size="16.0" />
+         </font></Button>
+      <Button layoutX="190.0" layoutY="138.0" mnemonicParsing="false" onAction="#pay_no" prefHeight="29.0" prefWidth="70.0" style="-fx-background-color: #ffb199;" text="아니요">
+         <font>
+            <Font name="HYkanM" size="16.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffb199" height="32.0" layoutY="-7.0" stroke="TRANSPARENT" strokeType="INSIDE" width="334.0" />
+   </children>
+</AnchorPane>
